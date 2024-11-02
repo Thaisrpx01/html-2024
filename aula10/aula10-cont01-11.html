@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form name="form1" method="post" action="http://hebertphp.awardspace.us/recebe.php">
+        <label for="login">Login</label> <input type="text" id="login" name="login" placeholder="Digite seu login" required><b>*</b><br>
+        <label for="senha">Senha</label> <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><b>*</b><br>
+        Data <input type="datetime-local" id="data" name="data"><br>
+        <input type="hidden" name="vai" value="já foi"> <!--hidden-campo oculto-->
+        <h2>Selecione uma ou mais linguagens</h2>
+        <input type="checkbox" name="JS" id="JS" checked><label for="JS">JS<br> </label><!--checked: previamente marcada-->
+        <input type="checkbox" name="PHP" id="PHP"><label for="PHP" >PHP<br> </label>
+        <input type="checkbox" name="SQL" id="SQL"><label for="SQL">SQL</label><br>
+
+        <h3><required>Qual dia da semana você tem aula de DPI?> </required></h3>
+        <input type="radio" name="dia-semana" value="Segunda" id="Segunda" required> <label for="Segunda"> </label>Segunda<br>  <!--para o o tipo radio todos os ampos "name" devem ser iguais !-->
+        <input type="radio" name="dia-semana" value="Terça"   id="Terça">   <label for="Terça"> </label>Terça<br>
+        <input type="radio" name="dia-semana" value="Quarta"  id="Quarta">  <label for="Quarta"> </label>Quarta<br>
+        <input type="radio" name="dia-semana value="Quinta"  id="Quinta">  <label for="Quinta"> </label>Quinta<br>
+        <input type="radio" name="dia-semana" value="Sexta"   id="Sexta">   <label for="Sexta"> </label>Sexta<br>
+        Selecione o UF
+        <select name="uf">
+            <option value="SP" selected>SP</option> 
+            <option value="RJ">RJ</option>
+            <option value="MG">MG</option>
+            <option value="ES">ES</option>
+        </select><br>
+        Mensagem <textarea name="msg" rows="10" cols="40" placeholder="Dígite sua mensagem "></textarea><br> <!--row:quantidade de linhas e cols: quantidade de colunas-->
+        
+
+       
+        
+<!-- ctrl + ; = atalho para comentário -->
+
+
+    
+        <input type="submit" value="Enviar!"><input type="reset"  value="Limpar Dados!">
+    </form><br>
+    <p><b>*</b> - Campo obrigaório</p>
+</body>
+</html>
